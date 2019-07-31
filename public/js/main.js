@@ -116,12 +116,13 @@ $('.closePagination button').on('click', function() {
     $('.modalPaginationPremios').slideToggle();
 })
 //search
-$('.search').hide();
 $('#openSearch').on('click', function() {
-    $('.search').fadeIn('slow');
+    $('.search').css('opacity', 1);
+    $('.search').css('z-index', 999);
 })
 $('.closeSearch').on('click', function () {
-    $('.search').fadeOut('slow');
+        $('.search').css('opacity', 0);
+        $('.search').css('z-index', '-999');
 })
 // help
 $('.modalhelpsearch').hide();
