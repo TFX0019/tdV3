@@ -5,6 +5,7 @@ $(document).ready(function() {
         menuShow: false,
         btnMenuShow: document.getElementById('toggleMenu'),
         btnMenuClose: document.getElementById('closeMenu'),
+        btnMenuCloseD: document.querySelector('.portafolio'),
         menuContainer: document.getElementsByClassName('menu2'),
         showCategorias: function () {
             var menuCategorias = document.querySelector('.categorias_c');
@@ -32,9 +33,13 @@ $(document).ready(function() {
 
 
 
-    $('#showCategorias').on('click', function () {
+    $('.showCategorias').on('click', function () {
         glob.showCategorias();
     })
+    $('.portafolio').on('click', function () {
+        glob.showCategorias();
+    })
+
     // revista
     $(function () {
         $('.revista').owlCarousel({
@@ -78,5 +83,18 @@ $(function () {
         glob.menuContainer[0].style.left = '-100%'
     })
 })
+
+// scroll 
+    $(".home").onepage_scroll({
+    sectionContainer: "section",
+    easing: "ease",
+    animationTime: 1000,
+    pagination: true,
+    updateURL: false,
+    loop: false,
+    keyboard: false,
+    responsiveFallback: false,
+    direction: "vertical"
+});
 
 })

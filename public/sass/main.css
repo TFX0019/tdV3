@@ -217,6 +217,7 @@ header {
   -webkit-box-shadow: 4px 0 8px rgba(0, 0, 0, 0.25);
           box-shadow: 4px 0 8px rgba(0, 0, 0, 0.25);
   z-index: 5;
+  background: white;
 }
 
 header a img {
@@ -321,6 +322,15 @@ header a img {
 
 .contenedor2::-webkit-scrollbar {
   display: none;
+}
+
+.home-item {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% calc(100% - 150px);
 }
 
 .oficina {
@@ -476,7 +486,20 @@ header a img {
   height: 20px;
 }
 
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid rgba(0, 0, 0, 0.5);
+  border-right: 2px solid rgba(0, 0, 0, 0.5);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-right: 10px;
+}
+
 .breadcrumb {
+  padding: 0;
+  padding-top: 10px;
   background-color: transparent;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -522,9 +545,11 @@ header a img {
 }
 
 .btn-colecciones button {
+  padding: 0;
+  margin: 0;
   border: none;
   border-radius: 50%;
-  padding: 7px 9px;
+  padding: 7px 10px;
   background: #fff;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
@@ -535,6 +560,7 @@ header a img {
   height: 20px;
   padding: 0;
   margin: 0;
+  margin-bottom: 1px;
 }
 
 .btn-colecciones button:focus {
@@ -572,6 +598,24 @@ header a img {
   font-weight: 400;
   text-transform: uppercase;
   margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ver-mas-colecciones img {
+  width: 10px;
+  height: 10px;
 }
 
 .categorias_c {
@@ -612,6 +656,15 @@ header a img {
   color: #d90466;
   width: 100%;
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .categorias_c .card-header button span {
@@ -643,6 +696,33 @@ header a img {
 
 .categorias_c .categorias_list .active {
   color: #d90466;
+}
+
+.portafolio {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.act-colecciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+button.btn-sb {
+  padding: 11px;
+  margin-right: 10px;
+}
+
+button.btn-sb img {
+  width: 16px;
+  height: 16px;
 }
 
 .titlePremios {
@@ -774,7 +854,7 @@ header a img {
 
 .footer-collages {
   width: 100%;
-  margin-top: 30px;
+  margin-top: -15px;
   text-align: center;
   padding-bottom: 120px;
 }
@@ -810,6 +890,7 @@ header a img {
 }
 
 .contacto .info-contacto {
+  padding: 10px 20px;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -879,5 +960,46 @@ header a img {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   margin-top: -60px;
+}
+
+.ubication {
+  color: #d90466;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.toolbarContacto {
+  width: 100%;
+  height: 50px;
+  text-align: right;
+  padding: 20px;
+  margin-bottom: 10%;
+}
+
+.toolbarContacto button {
+  width: 20px;
+  height: 20px;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toolbarContacto button:focus {
+  outline: none;
 }
 /*# sourceMappingURL=main.css.map */
