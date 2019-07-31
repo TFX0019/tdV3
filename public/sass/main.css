@@ -1136,6 +1136,8 @@ button.btn-sb img {
   text-align: right;
   padding: 20px;
   margin-bottom: 5%;
+  position: fixed;
+  top: 0;
 }
 
 .toolbarContacto button {
