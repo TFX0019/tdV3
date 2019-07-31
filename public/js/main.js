@@ -116,13 +116,13 @@ $('.closePagination button').on('click', function() {
     $('.modalPaginationPremios').slideToggle();
 })
 //search
-$('#openSearch').on('click', function() {
-    $('.search').css('opacity', 1);
-    $('.search').css('z-index', 999);
+document.querySelector('#openSearch').addEventListener('click', function() {
+    document.querySelector('.search').style.opacity = 1;
+    document.querySelector('.search').style.zIndex = 999;
 })
-$('.closeSearch').on('click', function () {
-        $('.search').css('opacity', 0);
-        $('.search').css('z-index', '-999');
+document.querySelector('.closeSearch').addEventListener('click', function () {
+    document.querySelector('.search').style.opacity = 0;
+    document.querySelector('.search').style.zIndex = '-999';
 })
 // help
 $('.modalhelpsearch').hide();
