@@ -19,7 +19,7 @@
         display: flex
         justify-content: space-between
         align-items: center
-        a
+        a, button
             display: flex
             align-items: center
             color: $textmenu
@@ -53,8 +53,22 @@
     top: 50px
     z-index: 99
     background: rgba(0, 0, 0, .2)
-    padding-top: 20%
     display: none
     .itemp
         img
             border: 3px solid #fff
+    .closePagination
+        width: 100%
+        height: 50px
+        text-align: right
+        button
+            background: none
+            border: none
+            padding: 0
+            margin: 0
+            line-height: 60px
+            &:focus
+                outline: none
+            img
+                width: 16px
+                height: 16px

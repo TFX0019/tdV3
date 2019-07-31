@@ -1,3 +1,13 @@
+.search
+    width: 100%
+    height: 100vh
+    overflow-x: hidden
+    overflow-y: auto
+    position: fixed
+    top: 0
+    left: 0
+    background: white
+    z-index: 999
 .toolbar-seach
     position: fixed
     top: 0
@@ -59,3 +69,30 @@
     img
         width: 20px
         height: 20px
+
+.modalhelpsearch
+    position: fixed
+    width: 100%
+    height: 100vh
+    top: 0
+    left: 0
+    display: flex
+    justify-content: center
+    align-items: center
+    background: rgba(0, 0, 0, .2)
+    img
+        border-radius: 10px
+        width: 90%
+    .closeModalhelp
+        background: none
+        border: none
+        position: absolute
+        padding: 0
+        margin: 0
+        right: 7%
+        top: 11%
+        &:focus
+            outline: none
+        img
+            width: 20px
+            height: 20px

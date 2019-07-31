@@ -1,12 +1,15 @@
 
 .breadcrumb-item+.breadcrumb-item::before 
     content: ""
-    width: 10px
-    height: 10px
-    border-top: 2px solid $textmenu
-    border-right: 2px solid $textmenu
+    width: 5px
+    height: 8px
+    border-top: 1px solid $textmenu
+    // border-bottom: 1px solid $textmenu
+    border-right: 1px solid $textmenu
+    // border-left: 1px solid $textmenu
     transform: rotate(45deg)
     margin-right: 10px
+    margin-top: 5px
 .breadcrumb
     padding: 0
     padding-top: 10px
@@ -15,7 +18,8 @@
     margin-bottom: 0
     .breadcrumb-item
         font-family: $montserrat
-        font-weight: 600
+        font-weight: 500
+        font-size: small
         a
             color: $textmenu
             text-decoration: none
@@ -29,25 +33,25 @@
     justify-content: center
     align-items: center
     a
-        padding: 0 10px
+        padding: 0 5px
         img
-            width: 20px
-            height: 20px
+            width: 15px
+            height: 15px
             opacity: .5
     button
         padding: 0
         margin: 0
         border: none
         border-radius: 50%
-        padding: 7px 10px
+        padding: 3.5px 9px
         background: #fff
         box-shadow: 0 0 5px rgba(0, 0, 0, .25)
         img
-            width: 20px
-            height: 20px
+            width: 15px
+            height: 15px
             padding: 0
             margin: 0
-            margin-bottom: 1px
+            margin-bottom: 4px
         &:focus
             outline: none
 .imgContainer
@@ -92,6 +96,15 @@
     border-radius: 25px 0 0 25px
     box-shadow: 0 0 5px rgba(0, 0, 0, .25)
     transition: all ease-in-out .4s
+    overflow-y: scroll
+    &::-webkit-scrollbar
+        width: 8px
+    &::-webkit-scrollbar-track
+        background: #ccc
+        border-radius: 4px
+    &::-webkit-scrollbar-thumb
+        background: #D90466
+        border-radius: 4px
     .categorias_title_container
         padding: 10px 0
         text-align: center
