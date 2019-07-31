@@ -1023,8 +1023,6 @@ button.btn-sb img {
 .contacto {
   width: 100%;
   height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
   position: fixed;
   bottom: -100%;
   left: 0;
